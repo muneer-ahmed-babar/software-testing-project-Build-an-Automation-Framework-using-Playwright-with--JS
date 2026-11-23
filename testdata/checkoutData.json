@@ -1,0 +1,7 @@
+{
+  "product": "sauce-labs-backpack",
+  "productName": "Sauce Labs Backpack",
+  "customer": { "firstName": "Ali", "lastName": "Khan", "postalCode": "75500" },
+  "missingFirstName": { "firstName": "", "lastName": "Khan", "postalCode": "75500", "expectedError": "First Name is required" },
+  "expectedConfirmation": "Thank you for your order!"
+}

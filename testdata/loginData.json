@@ -1,0 +1,11 @@
+{
+  "validUsers": [
+    { "username": "standard_user", "password": "secret_sauce" },
+    { "username": "problem_user", "password": "secret_sauce" }
+  ],
+  "invalidUsers": [
+    { "scenario": "locked out user", "username": "locked_out_user", "password": "secret_sauce", "expectedError": "this user has been locked out" },
+    { "scenario": "wrong password", "username": "standard_user", "password": "wrong_pass", "expectedError": "do not match any user" },
+    { "scenario": "empty username", "username": "", "password": "secret_sauce", "expectedError": "Username is required" }
+  ]
+}

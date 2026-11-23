@@ -1,0 +1,19 @@
+{
+  "getAllPosts":   { "endpoint": "/posts", "expectedStatus": 200, "expectedCount": 100 },
+  "getSinglePost": { "endpoint": "/posts/1", "expectedStatus": 200, "expectedUserId": 1 },
+  "getMissingPost":{ "endpoint": "/posts/99999", "expectedStatus": 404 },
+  "getPostsByUser":{ "endpoint": "/posts?userId=1", "expectedStatus": 200, "expectedCount": 10 },
+  "createPost": {
+    "endpoint": "/posts", "expectedStatus": 201,
+    "payload": { "title": "My test post", "body": "Created by Playwright", "userId": 1 }
+  },
+  "updatePost": {
+    "endpoint": "/posts/1", "expectedStatus": 200,
+    "payload": { "id": 1, "title": "Updated title", "body": "Updated body", "userId": 1 }
+  },
+  "patchPost": {
+    "endpoint": "/posts/1", "expectedStatus": 200,
+    "payload": { "title": "Only the title changed" }
+  },
+  "deletePost": { "endpoint": "/posts/1", "expectedStatus": 200 }
+}
