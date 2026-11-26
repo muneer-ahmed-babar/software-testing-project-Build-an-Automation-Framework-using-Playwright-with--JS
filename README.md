@@ -87,3 +87,11 @@ The Jenkinsfile uses `bat` (Windows). On Linux replace `bat` with `sh` and `%VAR
 ## Test list
 **UI (12):** 2 valid logins, 3 invalid logins, 6 products shown, sort by price, add to cart, remove from cart, logout, full checkout, checkout with missing first name.
 **API (8):** GET all, GET single + schema, GET 404, GET filtered, POST, PUT, PATCH, DELETE.
+
+## Documentation and evidence (`docs/`)
+| File | What it contains |
+|---|---|
+| `docs/Project_Documentation.pdf` | Architecture, Docker build and run evidence, Allure reports |
+| `docs/README_Framework_Guide.pdf` | Full framework guide (setup, structure, test list, Docker, Jenkins) |
+| `docs/Jenkins_Pipeline_Screenshots.pdf` | Successful Jenkins run, Allure report in Jenkins, archived artifacts |
+| `docs/Playwright_HTML_Test_Report.html` | Playwright HTML report: 20 of 20 tests passed |
